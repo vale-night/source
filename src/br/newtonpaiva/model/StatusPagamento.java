@@ -1,17 +1,29 @@
 package br.newtonpaiva.model;
 
 public enum StatusPagamento {
-    PEDENTE(1),
-    EM_ANDAMENTO(2),
-    EM_ESPERA(3),
-    CONCLUIDO(4),
-    CANCELADO(5);
+	PEDENTE(1, "Pendente", "Pendente"),
+	EM_ANDAMENTO(2, "Em andamento", "Em andamento"),
+	EM_ESPERA(3, "Em espera", "Em espera"),
+	CONCLUIDO(4, "Concluído", "Concluído"),
+	CANCELADO(5, "Cancelado", "Cancelado");
 
-    private final int status;
-    StatusPagamento(int statusOpcao){
-        status = statusOpcao;
+    private final int id;
+    private final String nome;
+    private final String descricao;
+    
+    private StatusPagamento(int id, String nome, String descricao){
+    	this.id = id;
+    	this.nome = nome;
+    	this.descricao = descricao;
     }
-    public int getStatus(){
-        return status;
-    }
+	public int getId() {
+		return id;
+	}
+	public String getNome() {
+		return nome;
+	}
+	public String getDescricao() {
+		return descricao;
+	}
+    
 }
