@@ -1,9 +1,15 @@
 package br.newtonpaiva.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public abstract class Filtro {
-	public Integer idFiltro;
-	public String nome;
-	public String descricao;
+	private Integer idFiltro;
+	private String nome;
+	private String descricao;
+	
+	private List<Evento> eventos = new ArrayList<>();//TODO - Implementar relacionamento N:N
+	
 	public Integer getIdFiltro() {
 		return idFiltro;
 	}
@@ -22,7 +28,11 @@ public abstract class Filtro {
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
-	
-	
+	public List<Evento> getEventos() {
+		return eventos;
+	}
+	public void setEventos(List<Evento> eventos) {
+		this.eventos = eventos;
+	}
 	
 }

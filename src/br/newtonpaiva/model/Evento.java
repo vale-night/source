@@ -1,5 +1,6 @@
 package br.newtonpaiva.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Evento {
@@ -10,7 +11,7 @@ public class Evento {
 	private boolean destaque = false;
 	private String faixaEtaria;
 	
-	private List<Filtro> filtros;
+	private List<Filtro> filtros = new ArrayList<>();//TODO - Implementar relacionamento N:N
 	
 	public Evento() {
 		
