@@ -1,9 +1,7 @@
 package br.newtonpaiva.model;
 
-import javafx.scene.text.Text;
-
 public class Endereco {
-    private Text idEndreço;
+    private String idEndereco;
     private String rua;
     private String bairro;
     private String cidade;
@@ -12,8 +10,8 @@ public class Endereco {
     private String latitude;
     private String longitude;
 
-    public Endereco(Text idEndreço, String rua, String bairro, String cidade, String uf, String complemento, String latitude, String longitude) {
-        this.idEndreço = idEndreço;
+    public Endereco(String idEndereco, String rua, String bairro, String cidade, String uf, String complemento, String latitude, String longitude) {
+        this.idEndereco = idEndereco;
         this.rua = rua;
         this.bairro = bairro;
         this.cidade = cidade;
@@ -23,12 +21,12 @@ public class Endereco {
         this.longitude = longitude;
     }
 
-    public Text getIdEndreço() {
-        return idEndreço;
+    public String getIdEndereco() {
+        return idEndereco;
     }
 
-    public void setIdEndreço(Text idEndreço) {
-        this.idEndreço = idEndreço;
+    public void setIdEndereco(String idEndereco) {
+        this.idEndereco = idEndereco;
     }
 
     public String getRua() {

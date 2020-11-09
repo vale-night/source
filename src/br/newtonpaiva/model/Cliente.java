@@ -5,8 +5,6 @@
  */
 package br.newtonpaiva.model;
 
-import javafx.scene.text.Text;
-
 /**
  *
  * @author karin
@@ -16,10 +14,10 @@ public class Cliente {
     private String senha;
     private String cpf;
     private String nome;
-    private Text idCliente;
+    private String idCliente;
     
     
-    public Cliente(String email, String senha, String cpf, String nome, Text idCliente){
+    public Cliente(String email, String senha, String cpf, String nome, String idCliente){
         this.email = email;
         this.senha = senha;
         this.cpf = cpf;
@@ -62,11 +60,11 @@ public class Cliente {
         this.nome = nome;
     }
     
-    public Text getIdCliente(){
+    public String getIdCliente(){
         return this.idCliente;
     }
     
-    public void setIdCliente(Text idCliente){
+    public void setIdCliente(String idCliente){
         this.idCliente = idCliente;
     }
     

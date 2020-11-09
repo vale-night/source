@@ -5,14 +5,12 @@
  */
 package br.newtonpaiva.model;
 
-import javafx.scene.text.Text;
-
 /**
  *
  * @author karin
  */
 public class Organizador {
-    private Text idOrganizador;
+    private String idOrganizador;
     private String email;
     private String senha;
     private String cnpj;
@@ -20,7 +18,7 @@ public class Organizador {
     private String nomeFantasia;
     
     
-    public Organizador(Text idOrganizador, String email, String senha, String cnpj, String razaoSocial, String nomeFantasia){
+    public Organizador(String idOrganizador, String email, String senha, String cnpj, String razaoSocial, String nomeFantasia){
         this.idOrganizador = idOrganizador;
         this.email = email;
         this.senha = senha;
@@ -30,11 +28,11 @@ public class Organizador {
                 
     }
     
-    public Text getIdOrganizador(){
+    public String getIdOrganizador(){
         return this.idOrganizador;
     }
     
-    public void setIdOrganizador(Text idOrganizador){
+    public void setIdOrganizador(String idOrganizador){
         this.idOrganizador = idOrganizador;
     }
     
