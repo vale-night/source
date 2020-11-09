@@ -9,6 +9,7 @@ public class Carrinho {
 	private Double valorTotal;
 	private List<Produto> produtos = new ArrayList<>();
 	private List<PromocaoCarrinho> promocoes = new ArrayList<>();
+	private Pedido pedido;
 	
 	public Carrinho() {
 		
@@ -52,5 +53,14 @@ public class Carrinho {
 	public void setPromocoes(List<PromocaoCarrinho> promocoes) {
 		this.promocoes = promocoes;
 	}
+
+	public Pedido getPedido() {
+		return pedido;
+	}
+
+	public void setPedido(Pedido pedido) {
+		this.pedido = pedido;
+	}
+	
 	
 }
