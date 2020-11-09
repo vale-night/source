@@ -10,6 +10,8 @@ public class Evento {
 	private String descricao;
 	private boolean destaque = false;
 	private String faixaEtaria;
+	private Endereco endereco;
+	private List<Arquivo> arquivos = new ArrayList<>();
 	
 	private List<Filtro> filtros = new ArrayList<>();//TODO - Implementar relacionamento N:N
 	
@@ -66,6 +68,22 @@ public class Evento {
 
 	public void setFiltros(List<Filtro> filtros) {
 		this.filtros = filtros;
+	}
+
+	public Endereco getEndereco() {
+		return endereco;
+	}
+
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
+	}
+
+	public List<Arquivo> getArquivos() {
+		return arquivos;
+	}
+
+	public void setArquivos(List<Arquivo> arquivos) {
+		this.arquivos = arquivos;
 	}
 
 	public void destacarEvento() {

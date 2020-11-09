@@ -8,6 +8,9 @@ public class Arquivo {
 	private String nome;
 	private Date dataUpload;
 	private String caminhoArquivo;
+	private Cliente cliente;
+	private Organizador organizador;
+	private Evento evento;
 	
 	public Arquivo() {
 		
@@ -46,6 +49,30 @@ public class Arquivo {
 	}
 	public void setCaminhoArquivo(String caminhoArquivo) {
 		this.caminhoArquivo = caminhoArquivo;
+	}
+
+	public Cliente getCliente() {
+		return cliente;
+	}
+
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
+
+	public Organizador getOrganizador() {
+		return organizador;
+	}
+
+	public void setOrganizador(Organizador organizador) {
+		this.organizador = organizador;
+	}
+
+	public Evento getEvento() {
+		return evento;
+	}
+
+	public void setEvento(Evento evento) {
+		this.evento = evento;
 	}
 	
 	

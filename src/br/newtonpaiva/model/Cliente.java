@@ -5,6 +5,9 @@
  */
 package br.newtonpaiva.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author karin
@@ -15,8 +18,9 @@ public class Cliente {
     private String cpf;
     private String nome;
     private String idCliente;
-    
-    
+    private List<Endereco> enderecos = new ArrayList<>();
+	private List<Arquivo> arquivos = new ArrayList<>();
+
     public Cliente(String email, String senha, String cpf, String nome, String idCliente){
         this.email = email;
         this.senha = senha;
@@ -67,5 +71,25 @@ public class Cliente {
     public void setIdCliente(String idCliente){
         this.idCliente = idCliente;
     }
+
+	public List<Endereco> getEnderecos() {
+		return enderecos;
+	}
+
+	public void setEnderecos(List<Endereco> enderecos) {
+		this.enderecos = enderecos;
+	}
+
+	public List<Arquivo> getArquivos() {
+		return arquivos;
+	}
+
+	public void setArquivos(List<Arquivo> arquivos) {
+		this.arquivos = arquivos;
+	}
+	
+	public void enviarArquivo() {
+		//TODO - Implementar
+	}
     
 }
