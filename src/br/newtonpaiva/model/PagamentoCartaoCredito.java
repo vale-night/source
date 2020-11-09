@@ -6,6 +6,7 @@ public class PagamentoCartaoCredito implements ServicoPagamento {
     private String nomeCartao;
     private int cvv;
     private String hash;
+    private Comprador comprador;
 
     public String getNumeroCartao() {
         return numeroCartao;
@@ -74,5 +75,14 @@ public class PagamentoCartaoCredito implements ServicoPagamento {
 	public String getIdentificador() {
 		// TODO Melhorar
 		return hash;
+	}
+	
+	public void setComprador(Comprador comprador) {
+		this.comprador = comprador;
+	}
+
+	@Override
+	public Comprador getComprador() {
+		return comprador;
 	}
 }

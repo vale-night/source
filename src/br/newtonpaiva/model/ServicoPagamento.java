@@ -8,4 +8,5 @@ public interface ServicoPagamento {
     public String receberPostback(String identificador);
     public StatusPagamento mapearStatus(String statusGatewayPagamento);
     public String getIdentificador();
+    public Comprador getComprador();
 }

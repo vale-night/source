@@ -2,7 +2,8 @@ package br.newtonpaiva.model;
 
 public class PagamentoBoleto implements ServicoPagamento {
     private String numeroBoleto;
-    private String cpfPaganete;
+    private String cpfPagante;
+    private Comprador comprador;
 
     public String getNumeroBoleto() {
         return numeroBoleto;
@@ -13,11 +14,11 @@ public class PagamentoBoleto implements ServicoPagamento {
     }
 
     public String getCpfPaganete() {
-        return cpfPaganete;
+        return cpfPagante;
     }
 
     public void setCpfPaganete(String cpfPaganete) {
-        this.cpfPaganete = cpfPaganete;
+        this.cpfPagante = cpfPaganete;
     }
 
     public String gerarHash(){
@@ -47,5 +48,14 @@ public class PagamentoBoleto implements ServicoPagamento {
 	public String getIdentificador() {
 		// TODO Melhorar
 		return numeroBoleto;
+	}
+	
+	public void setComprador(Comprador comprador) {
+		this.comprador = comprador;
+	}
+
+	@Override
+	public Comprador getComprador() {
+		return comprador;
 	}
 }

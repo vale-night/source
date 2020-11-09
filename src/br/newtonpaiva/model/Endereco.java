@@ -3,6 +3,7 @@ package br.newtonpaiva.model;
 public class Endereco {
     private String idEndereco;
     private String rua;
+    private String numero;
     private String bairro;
     private String cidade;
     private String uf;
@@ -37,7 +38,15 @@ public class Endereco {
         this.rua = rua;
     }
 
-    public String getBairro() {
+    public String getNumero() {
+		return numero;
+	}
+
+	public void setNumero(String numero) {
+		this.numero = numero;
+	}
+
+	public String getBairro() {
         return bairro;
     }
 
