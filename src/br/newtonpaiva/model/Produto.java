@@ -5,13 +5,15 @@ import java.util.Date;
 import java.util.List;
 
 public class Produto {
-	public String idProduto;
-	public String nomeProduto;
-	public Double preco;
-	public Double precoEspecial;
-	public Date dataInicioPromocao;
-	public Date dataFimPromocao;
-	public List<CategoriaProduto> categorias = new ArrayList<>();//TODO - Implementar relacionamento N:N
+	private String idProduto;
+	private String nomeProduto;
+	private Double preco;
+	private Double precoEspecial;
+	private Date dataInicioPromocao;
+	private Date dataFimPromocao;
+	private List<CategoriaProduto> categorias = new ArrayList<>();//TODO - Implementar relacionamento N:N
+	private List<Carrinho> carrinhos = new ArrayList<>();//TODO - Implementar relacionamento N:N
+	
 	public TipoDeProduto tipo;
 	
 	public Produto() {
@@ -79,6 +81,14 @@ public class Produto {
 	}
 	public void setTipo(TipoDeProduto tipo) {
 		this.tipo = tipo;
+	}
+
+	public List<Carrinho> getCarrinhos() {
+		return carrinhos;
+	}
+
+	public void setCarrinhos(List<Carrinho> carrinhos) {
+		this.carrinhos = carrinhos;
 	}
 	
 	
