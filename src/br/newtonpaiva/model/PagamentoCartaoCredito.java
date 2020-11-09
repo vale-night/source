@@ -1,6 +1,6 @@
 package br.newtonpaiva.model;
 
-public class PagamentoCartaoCredito {
+public class PagamentoCartaoCredito implements ServicoPagamento {
     private String numeroCartao;
     private String validadeCartao;
     private String nomeCartao;
@@ -51,4 +51,28 @@ public class PagamentoCartaoCredito {
         // todo
         return "";
     }
+
+	@Override
+	public String gerarCheckout() {
+		// TODO criar
+		return null;
+	}
+
+	@Override
+	public String receberPostback(String identificador) {
+		// TODO criar
+		return null;
+	}
+
+	@Override
+	public StatusPagamento mapearStatus(String statusGatewayPagamento) {
+		// TODO criar
+		return null;
+	}
+
+	@Override
+	public String getIdentificador() {
+		// TODO Melhorar
+		return hash;
+	}
 }

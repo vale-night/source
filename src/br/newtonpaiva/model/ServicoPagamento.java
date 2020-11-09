@@ -1,10 +1,11 @@
 package br.newtonpaiva.model;
 
-public abstract class ServicoPagamento {
+public interface ServicoPagamento {
 
-    Pagamento pagamento = new Pagamento();
+//    Pagamento pagamento = new Pagamento();
 
-    public abstract String gerarCheckout();
-    public abstract String receberPostback(String identificador);
-    public abstract StatusPagamento mapearStatus(String statusGatewayPagamento);
+    public String gerarCheckout();
+    public String receberPostback(String identificador);
+    public StatusPagamento mapearStatus(String statusGatewayPagamento);
+    public String getIdentificador();
 }

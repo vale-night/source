@@ -1,6 +1,6 @@
 package br.newtonpaiva.model;
 
-public class PagamentoBoleto {
+public class PagamentoBoleto implements ServicoPagamento {
     private String numeroBoleto;
     private String cpfPaganete;
 
@@ -24,4 +24,28 @@ public class PagamentoBoleto {
         // todo
         return "";
     }
+
+	@Override
+	public String gerarCheckout() {
+		// TODO Criar
+		return null;
+	}
+
+	@Override
+	public String receberPostback(String identificador) {
+		// TODO Criar
+		return null;
+	}
+
+	@Override
+	public StatusPagamento mapearStatus(String statusGatewayPagamento) {
+		// TODO Criar
+		return null;
+	}
+
+	@Override
+	public String getIdentificador() {
+		// TODO Melhorar
+		return numeroBoleto;
+	}
 }
