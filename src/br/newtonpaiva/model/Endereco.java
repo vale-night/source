@@ -2,7 +2,7 @@ package br.newtonpaiva.model;
 
 import javafx.scene.text.Text;
 
-public class Endereço {
+public class Endereco {
     private Text idEndreço;
     private String rua;
     private String bairro;
@@ -12,7 +12,7 @@ public class Endereço {
     private String latitude;
     private String longitude;
 
-    public Endereço(Text idEndreço, String rua, String bairro, String cidade, String uf, String complemento, String latitude, String longitude) {
+    public Endereco(Text idEndreço, String rua, String bairro, String cidade, String uf, String complemento, String latitude, String longitude) {
         this.idEndreço = idEndreço;
         this.rua = rua;
         this.bairro = bairro;
