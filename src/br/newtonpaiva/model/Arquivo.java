@@ -17,7 +17,6 @@ public class Arquivo {
 	}
 	
 	public Arquivo(String idArquivo, String nome, Date dataUpload, String caminhoArquivo) {
-		super();
 		this.idArquivo = idArquivo;
 		this.nome = nome;
 		this.dataUpload = dataUpload;
