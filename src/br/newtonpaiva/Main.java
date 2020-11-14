@@ -7,6 +7,9 @@ public class Main {
 		System.out.println("Teste Arquivo: " + testaArquivo());
 		System.out.println("Teste PagamentoBoleto: " + testaPagamentoBoleto());
 		System.out.println("Teste Carrinho: " + testaCarrinho());
+                System.out.println("Teste Cliente" + testacliente());
+                System.out.println("Teste Organizador" + testaorganizador());
+                
 	}
 	
 	public static boolean testaArquivo() {
@@ -24,6 +27,17 @@ public class Main {
 		Carrinho carrinho = new Carrinho();
 		return carrinho != null && carrinho.getProdutos() != null;
 	}
+        
+        public static boolean testacliente(){
+            Cliente cliente = new Cliente();
+            return cliente != null;
+            
+        }
+        
+        public static boolean testaorganizador(){
+            Organizador organizador = new Organizador();
+            return organizador != null;
+        }
 	
 
 }
