@@ -25,5 +25,11 @@ public class Main {
 		return carrinho != null && carrinho.getProdutos() != null;
 	}
 	
+        public static boolean testaEvento() {
+            Evento evento = new Evento();
+            return evento != null;
+           
+        }
+        
 
 }
