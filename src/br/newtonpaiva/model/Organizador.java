@@ -33,7 +33,10 @@ public class Organizador {
                 
     }
     
-    public String getIdOrganizador(){
+    public Organizador() {
+	}
+
+	public String getIdOrganizador(){
         return this.idOrganizador;
     }
     
