@@ -34,6 +34,17 @@ public class Main {
 		Carrinho carrinho = new Carrinho();
 		return carrinho != null && carrinho.getProdutos() != null;
 	}
+	
+	public static boolean testaProduto() {
+		Produto produto = new Produto();
+		produto.setIdProduto("123421");
+		return produto != null;
+	}
+	
+	public static boolean testaCategoriaProduto() {
+		CategoriaProduto categoriaProduto = new CategoriaProduto();
+		return categoriaProduto != null && categoriaProduto.getProdutos() != null;
+	}
         
     public static boolean testacliente(){
         Cliente cliente = new Cliente();
